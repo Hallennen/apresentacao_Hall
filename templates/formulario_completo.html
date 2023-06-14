@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORMULARIO</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/formulario.css') }}">
+    </head>
+    <body>
+        <div class="barra">
+            <ul>
+                <li><a href="{{url_for('login') }}">Home</a></li>
+                <li><a href="{{ url_for('apresentação') }}">Who We Are?</a></li>
+                <li><a href="{{ url_for('contatos') }}">Contact</a></li>
+                <li id="log"><a href="">Login</a></li>
+            </ul>
+        </div>
+            <div class="centro">
+                <div class="base">
+                    <h1>CADASTRO</h1>
+                    <form action="{{ url_for('cadastro') }}" method="POST">
+                        <label >NOME:</label><br> 
+                        <input  required type="text" placeholder="Name complete" name="name" values="valor"><br>
+
+                        <label >IDADE:</label><br>
+                        <input required placeholder="Years" name="IDADE" values="valor"><br>
+
+                        <label >CIDADE:</label><br>
+                        <input required placeholder="City" name="CIDADE" values="valor"><br>
+
+                        <label >RUA:</label><br>
+                        <input  required placeholder="Adress jão bobo" name="RUA" values="valor"><br>
+
+                        <label >CPF:</label><br>
+                        <input  required placeholder="000.000.000-00" name="CPF" values="valor"><br>
+
+                        <label >TELEFONE:</label><br>
+                        <input required placeholder="11 X1234-4567" name="TELEFONE" values="valor"><br>
+                        
+                        <label name="EMAIL">EMAIL:</label><br>
+                        <input required placeholder="user.name@tester.com.br" name="EMAIL" values="valor"><br>
+                        
+                        <label >SENHA:</label><br>
+                        <input required type="password" placeholder="1234@SENHA!*" name="SENHA" values="valor"><br>
+
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Cadastrar</button>
+
+
+                    </form>
+                </div>
+            </div>
+    </body>
+</html>

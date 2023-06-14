@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>QUEM_SOMOS!</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/quem_somos.css') }}">
+</head>
+    <body>
+        <div class="barra">
+            <ul>
+                <li><a href="{{ url_for('login') }}">Home</a></li>
+                <li><a href="{{ url_for('apresentação') }}">Who We Are?</a></li>
+                <li><a href="{{ url_for('contatos') }}">Contact</a></li>
+                <li id="log"><a href="">Login</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="caixa">
+                <H1>HALLENNEN MARINHO</H1>
+                
+                    <img src="https://media.licdn.com/dms/image/D4D03AQHhyqvA4Z6AWg/profile-displayphoto-shrink_800_800/0/1672194257540?e=2147483647&v=beta&t=do4nifNjd_U6914RMqdlyWYn1_BIbM8o4crEmctmsxo" alt="minha img" width="150" height="140">
+                    <div class="texto">
+
+                        <p>
+                            Hallennen Gonçalves Marinho, 21 anos, nascido em 26 de março de 2001 em Santo André. 
+                            Atualmente formado em sistemas de informação pela Universidade Nove de Julho (Uninove), 
+                            pós graudando Engenharia de Software na Pontifícia Universidade Católica de Minhas Gerais (PUC-MG).
+                        </p>
+                        <p> 
+                            Desenvolvedor junior com 1 ano de experiencia.  Conhecimento em Python para desenvolvimento WEB e Desktop.
+                        </p>
+                        <P id="skils">
+                            HARD SKILLS: Excel, Python, SQL, HTML, CSS, FLASK
+                        </P>
+                        
+                        <P> SOFT SKILLS: Adaptativo, Curioso, Disciplinado, Engajado.</P>
+
+                    </div>
+                    <div class="contatos">
+                        <a href="https://www.linkedin.com/in/hallennen-marinho-64447a17b/">LINKEDIN</a><a href="https://github.com/Hallennen">GITHUB</a>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/styles_login.css') }}">
+    </head>
+    <body>
+        <div class="barra"> 
+            <ul>
+                <li><a href="{{url_for('login') }}">Home</a></li>
+                <li><a href="{{url_for('apresentação') }}">Who We Are?</a></li>
+                <li><a href="{{ url_for('contatos') }}">Contact</a></li>
+                <li id="log"><a href="">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="conteiner">
+            
+            <div class="box">
+                <form class="usuario" action="{{ url_for('login') }}" method="POST">
+                    <h1>Login</h1>
+
+                    <label>Usuario:</label>
+                    <input required type="text" placeholder="usuario@teste.com" name="usuario" >
+                    <label>Senha:  </label>
+                    <input required type="password" placeholder="Senh@20*!" name="senha"><br>
+                    <button action="{{ url_for('login') }}" type="submit" name="acesso">Logar</button>
+                    <p><a href="{{url_for('cadastro')}}" method="POST">Não possui conta?</a><label id="texto">{{resposta}} </label></p>
+                </form> 
+
+
+            </div>
+        </div>
+    </body>
+</html>

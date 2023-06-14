@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>CONTATOS</title>
+        <link rel="stylesheet" href="{{ url_for('static' , filename='css/contatos.css') }}">
+    </head>
+        <body>
+            <div class="barra">
+                <ul>
+                    <li><a href="{{ url_for('login') }}">Home</a></li>
+                    <li><a href="{{ url_for('apresentação') }}">Who We Are?</a></li>
+                    <li><a href="{{ url_for('contatos') }}">Contact</a></li>
+                    <li id="log"><a href="">Login</li>
+                </ul>
+            </div>
+            <div class="center">
+                <div class="caixa">
+                    <button type="button"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">E-mail</button><br>
+                    <button type="button"><a href="https://wa.me/+5511991984592">Whatsapp</button><br>
+                    <button type="button"><a href="https://www.linkedin.com/in/hallennen-marinho-64447a17b/">Linkedin</button><br>
+                    <button type="button"><a href="https://github.com/Hallennen">Github</button>
+                </div>
+            </div>
+        </body>
+</html>
